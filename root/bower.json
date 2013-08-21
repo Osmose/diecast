@@ -1,0 +1,8 @@
+{
+    "name": "{%= name %}",
+    "version": "{%= version %}",
+    "dependencies": {
+        "requirejs": "~2.1.8",
+        "almond": "~0.2.6"
+    }
+}

@@ -1,0 +1,3 @@
+{
+    "src/js/name.js": "src/js/{%= name %}.js"
+}
