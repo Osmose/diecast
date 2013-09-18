@@ -1,0 +1,50 @@
+@import "/components/bootstrap/less/bootstrap.less";
+
+/* @header
+-------------------------------------------------- */
+#page-header {
+    .navbar;
+    .navbar-inverse;
+    .navbar-static-top;
+}
+
+#site-title {
+    .navbar-brand;
+    margin: 0;
+    color: @navbar-inverse-color;
+}
+
+/* @content
+-------------------------------------------------- */
+#content {
+    .make-row();
+
+    .main {
+        .make-md-column(9);
+    }
+
+    .sidebar {
+        .make-md-column(3);
+        .well;
+
+        h2 {
+            margin-top: .3em;
+        }
+    }
+}
+
+.helpful-links {
+    .list-group;
+
+    li {
+        .list-group-item;
+    }
+
+    h3 {
+        .list-group-item-heading;
+    }
+
+    p {
+        .list-group-item-text;
+    }
+}

@@ -3,13 +3,61 @@
   <head>
     <meta charset="utf-8">
     <title>{%= name %}</title>
+    <!-- @if build=false -->
+      <link rel="stylesheet/less" type="text/css" href="less/styles.less" />
+      <script src="components/less.js/dist/less-1.4.2.js"></script>
+    <!-- @endif -->
+
+    <!-- @if build=true -->
+      <link rel="stylesheet" href="styles.css">
+    <!-- @endif -->
   </head>
   <body>
-    <div class="container"></div>
+    <header id="page-header">
+      <div class="container">
+        <h1 id="site-title">{%= name %}</h1>
+      </div>
+    </header>
 
-    <!-- @if development -->
-    <script src="js/vendor/requirejs/require.js"></script>
+    <div class="container">
+      <article id="content">
+        <section class="main">
+          <h2>Thanks for using diecast!</h2>
+          <p>You're really super-swell.</p>
+        </section>
+        <aside class="sidebar">
+          <h2>Helpful Links</h2>
+          <ul class="helpful-links">
+            <li>
+              <a href="http://gruntjs.com/">
+                <h3>Grunt</h3>
+                <p>The JavaScript Task Runner</p>
+              </a>
+            </li>
+            <li>
+              <a href="http://bower.io/">
+                <h3>Bower</h3>
+                <p>A package manager for the web</p>
+              </a>
+            </li>
+            <li>
+              <a href="http://getbootstrap.com/">
+                <h3>Twitter Bootstrap</h3>
+                <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </article>
+    </div>
+
+    <!-- @if build=false -->
+      <script src="components/requirejs/require.js"></script>
+      <script src="js/bootstrap.js"></script>
     <!-- @endif -->
-    <script src="js/bootstrap.js"></script>
+
+    <!-- @if build=true -->
+      <script src="scripts.js"></script>
+    <!-- @endif -->
   </body>
 </html>

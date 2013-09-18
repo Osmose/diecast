@@ -10,10 +10,10 @@
 
     exports.description = 'Create a single-page JS app that can be published to Github Pages.';
     exports.warnOn = '*';
-    exports.after = ('You should now install project dependencies with _npm install_. After ' +
-                     'that, you may execute project tasks with _grunt_. For more information ' +
-                     'about installing and configuring Grunt, please see the Getting Started ' +
-                     'guide:' +
+    exports.after = ('You should now install project dependencies with _npm install_ and ' +
+                     'frontend dependencies with _bower install_. After that, you may execute ' +
+                     'project tasks with _grunt_. For more information about installing and ' +
+                     'configuring Grunt, please see the Getting Started guide:' +
                      '\n\n' +
                      'http://gruntjs.com/getting-started');
 
@@ -33,7 +33,9 @@
                 'uglify-js': '~2.3.6',
                 'grunt-contrib-requirejs': '~0.4.1',
                 'grunt-preprocess': '~2.3.0',
-                'grunt-gh-pages': '~0.7.1'
+                'grunt-gh-pages': '~0.7.1',
+                'grunt-contrib-less': '~0.7.0',
+                "grunt-contrib-copy": "~0.4.1",
             };
 
             var files = init.filesToCopy(props);

@@ -3,6 +3,8 @@
     "version": "{%= version %}",
     "dependencies": {
         "requirejs": "~2.1.8",
-        "almond": "~0.2.6"
+        "almond": "~0.2.6",
+        "bootstrap": "~3.0.0",
+        "less.js": "~1.4.2"
     }
 }

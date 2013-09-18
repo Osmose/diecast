@@ -4,6 +4,14 @@
 
 [grunt-init]: http://gruntjs.com/project-scaffolding
 
+## Features
+
+- Includes [Grunt](http://gruntjs.com/) tasks for running a local server, building your app into
+  a
+- Uses [Bower](http://bower.io/) for pulling in frontend dependencies, like
+  [Bootstrap](http://getbootstrap.com/).
+- Uses [RequireJS](http://requirejs.org/) for managing JavaScript module loading.
+
 ## Installation
 If you haven't already done so, install [grunt-init][].
 
